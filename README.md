@@ -1,4 +1,4 @@
-# GitHub Actions Fundamentals
+# GitHub Actions Fundamentals for WSP
 
 Repo for the `GitHub Actions Fundamentals` training.
 
