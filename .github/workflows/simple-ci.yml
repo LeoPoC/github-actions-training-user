@@ -1,0 +1,29 @@
+name: Simple CI Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+
+# simple workflow involved in different types of actions
+# name: different types of actions
+# on: push
+# jobs:
+#   run_shell_commands:
+#     name: Actions are amazing
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Say Hello
+#         run: echo Hello, world!
+#       - name: Public Action
+#         uses: actions/checkout@v4
+#       - name: Local Action
+#         uses: ./.github/actions/hello
+#         with:
+#           who-to-greet: "WSP Team!"
+#       - name: Docker Image
+#         run: docker run --rm alpine:latest echo "Hello from a Docker container!"
